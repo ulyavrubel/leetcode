@@ -9,10 +9,10 @@ var replaceElements = function(arr) {
       break;
     }
 
+    const max = Math.max(...arr.slice(1));
     arr[i] = max;
   }
 
-  const max = Math.max(...arr.slice(1));
   return arr;
 };
 
